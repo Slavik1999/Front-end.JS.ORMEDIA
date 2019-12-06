@@ -4,21 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="index.css" >
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="wrapper">
-        <div class="header">
-            <h1>Список дел</h1>
-            <input type="text" placeholder="Введите новое дело..." id="text">
-            <input type="datetime-local" placeholder="Введите новое дело..." id="time">
-            <span class="addBtn" onclick="newElement()">Добавить</span>
-        </div>
-        <ul id="list">
+<body> 
 
-        </ul>
+    <button type="button" id="addPerson">Создать</button>
+
+    <table id="table-output">
+        <tr id="tr-1">
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Возраст</th>
+            <th>Должность</th>
+            <th>Огранизация</th>
+            <th></th>
+        </tr>
+        <tr id="column_infos">
+        </tr>
+    </table>
+    <table id="table_info">
+        <tr>
+            <th>Имя</th>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <th>Фамилия</th>
+            <td id="surname"></td>
+        </tr>
+        <tr>
+            <th>Отчество</th>
+            <td id="otchestvo"></td>
+        </tr>
+        <tr>
+            <th>Возраст</th>
+            <td id="age"></td>
+        </tr>
+        <tr>
+            <th>Наличие детей</th>
+            <td id="children"></td>
+        </tr>
+        <tr>
+            <th>Должность</th>
+            <td id="position"></td>
+        </tr>
+        <tr>
+            <th>Стаж</th>
+            <td id="job_age"></td>
+        </tr>
+        <tr>
+            <th>Дата принятия на работу</th>
+            <td id="job_date"></td>
+        </tr>
+        <tr>
+            <th>Огранизация</th>
+            <td id="organisation"></td>
+        </tr>
+    </table>
+    <div class="form">
+        <form id="myForm" onsubmit="return false">
+    
+            <div class="">
+    
+                <label >Имя</label>
+                <div >
+                <input  type="text" id="name"  required pattern="^[a-zA-Zа-яА-Я]+$">
+                </div>
+            
+                <label >Фамилия</label>
+                <div >
+                <input  type="text" id="surname"  required pattern="^[a-zA-Zа-яА-Я]+$">
+                </div>
+            
+                <label >Отчество</label>
+                <div >
+                <input  type="text" id="patronymic"  required pattern="^[a-zA-Zа-яА-Я]+$">
+                </div>
+                
+                <label >Пол</label>
+                <div >
+                <input  type="text" id="sex"  required pattern="^[a-zA-Zа-яА-Я]+$">
+                </div>
+
+                <label >Возраст</label>
+                <div >
+                <input type="number"  min="16" max="70" id="age" name="age" maxlength="2" required pattern="^[0-9]+$">
+                </div>
+            
+                <label >Стаж</label>
+                <div >
+                <input type="number"  min="0" max="50" id="experience" maxlength="2" required pattern="^[0-9]+$">
+                </div>
+            
+                <label >Зарплата</label>
+                <div class="money">
+                <input type="number"  min="10" max="10000" id="money" maxlength="6" required pattern="^[0-9]+$">
+                </div>
+            
+                <div class="radio">
+                <label><input type="radio" name="radioName" class="first-button" id="industry" value="1">Рабочий индустриального предприятия</label>
+                </div>
+            
+                <div class="radio">
+                <label><input type="radio" name="radioName" class="second-button" id="transport" value="2">Рабочий транспортного предприятия</label>
+                </div>
+            
+                <div class="add-info">
+                <label  id="name-org">Название организации</label>
+                <input  type="text" id="organization"  required>
+
+                <label >Должность</label>
+                <input  type="text" id="position"  required pattern="^[a-zA-Zа-яА-Я]+$">
+                </div>
+            </div>  
+            <button  id="button-submit">Отправить</button>
+        </form>
     </div>
-    <script src="index.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
