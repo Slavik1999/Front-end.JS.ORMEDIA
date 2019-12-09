@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+th, td {
+    border: 1px solid grey;
+}
+table{
+    width: 80vw;
+}
+
+#table{
+    display: none;
+}
+#btnSave{
+    display: inline-block;
+
+}
+#btnSaveCr{
+    display: none;
+
+}
+.btnCrud{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#wrapper{
+    display: none;
+    width: 100vw;
+    padding-top: 30px;
+}
+.wrapper{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.tblInner{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 80px;
+    justify-content: space-around;
+}
+.leftBlock{
+    border: 2px solid black;
+    width: 40%;
+}
+    
+.rightBlock{
+    width: 40%;
+}
+.task{
+    width: 40vw;
+}
+
+.colorTableTitle{
+    background: gray;
+
+}
+.btnProp{
+    height: 60px;
+    width: 130px;
+}
+.inputPlace{
+    width: 60%;
+}
+.formGroup{
+    display: flex;
+    padding: 15px 0 5px 0;
+    justify-content: space-between;
+}
+.controlLabel{
+    padding: 0 0 0 20px;
+}
+.formControl{
+    width: 90%;
+    font-size: 13px;
+}
+.control-label{
+    border: black 1px solid;
+}
+.btnPadd{
+    padding: 20px 0 20px 0;
+}
+.btnSize{
+    width: 100px;
+    height: 35px;
+    outline: none;
+}
+.padd{
+    padding-top: 100px;
+}
