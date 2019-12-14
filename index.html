@@ -1,74 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Таблица Рабочих</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ES6</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
 
-<div class="wrapper" id="wrapper">
+  <div class="calculator">
 
-    <div class="leftBlock thing">
-            <div class="formGroup">
-                <label for="adress" class="controlLabel">Имя</label>
-                <div class="inputPlace">
-                    <input type="text" id="name" class="formControl">
-                </div>
-            </div>
+    <input type="text" class="calc_all" value="" disabled />
 
-            <div class="formGroup">
-                <label for="rooms" class="controlLabel">Фамилия</label>
-                <div class="inputPlace">
-                    <input type="text" id="surname" class="formControl">
-                </div>
-            </div>
+    <div class="calc_keys">
 
-            <div class="formGroup">
-                <label for="window" class="controlLabel">Отчество</label>
-                <div class="inputPlace">
-                    <input type="text" id="otchestvo" class="formControl">
-                </div>
-            </div>
+      <button type="button" class="operator" value="+">+</button>
+      <button type="button" class="operator" value="-">-</button>
+      <button type="button" class="operator" value="*">*</button>
+      <button type="button" class="operator" value="/">/</button>
+      <button type="button" class="operator" value="%">%</button>
+      <button type="button" class="operator" value="^">^</button>
 
-            <div class="formGroup">
-                <label for="sizeA" class="controlLabel">Возраст</label>
-                <div class="inputPlace">
-                    <input type="number" id="age" class="formControl">
-                </div>
-            </div>
+      <button type="button" class="operator" id="factorial">!</button>
+      <button type="button" id="clear">AC</button>
+      <button type="button" id="sinRad">sinRad</button>
+      <button type="button" id="sin">sin</button>
+      <button type="button" id="cosRad">cosRad</button>
+      <button type="button" id="cos">cos</button>
+      <button type="button" id="tgRad">tgRad</button>
+      <button type="button" id="tg">tg</button>
+      <button type="button" id="ctgRad">ctgRad</button>
+      <button type="button" id="ctg">ctg</button>
 
-            <div class="formGroup">
-                <label for="sizeB" class="controlLabel">Организация</label>
-                <div class="inputPlace">
-                    <input type="text" id="organisation" class="formControl">
-                </div>
-            </div>
+      <button type="button" value="1">1</button>
+      <button type="button" value="2">2</button>
+      <button type="button" value="3">3</button>
+      <button type="button" value="4">4</button>
+      <button type="button" value="5">5</button>
+      <button type="button" value="6">6</button>
+      <button type="button" value="7">7</button>
+      <button type="button" value="8">8</button>
+      <button type="button" value="9">9</button>
+      <button type="button" value="0">0</button>
+      <button type="button" value="0.">.</button>
 
-        <div class="btnPadd">
-                <input type="submit" value="Записать" id="btnSave" class="btnSize" onclick=""/>
-                <input type="submit" value="Редактировать" id="btnSaveCr" class="btnSize" onclick="btnSaveCreate()"/>
-        </div>
+  
+
+      <button type="button" id="ravno" class="equal-sign operator" value="=">=</button>
+
 
     </div>
+  </div>
 
-</div>
 
-<div class="btnCrud" id="btnCrud">
-    <input type="submit" value="Создать" id="btnCreate" class="btnProp"/>
-</div>
-
-<div class="tblInner">
-    <div class="container">
-        <table id="tblList" class="tblList table"></table>
-        <div class="rightBlock thing" id="inform"></div>
-    </div>
-</div>
-
-<!-- Goods JavaScript -->
-
-<script src="js/script.js"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
