@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id = "weather">
+    <header>
+      <section class="top1">
+          <div class="new_route">
+              <h1>Минск - Москва</h1>
+              <p>7 &nbsp;&mdash; 10 декабря</p>
+          </div>
+      </section>
+
+      <section class="top2">
+          <nav>
+              <a href="#">Главное табло</a>
+          </nav>
+          <div class="add_route">
+              <span>Точка отправления: </span>
+              <select id ="pointDeparture">
+                <option value="Москва">Москва</option>
+                <option value="Лондон">Лондон</option>
+                <option value="Париж">Париж</option>
+                <option value="Берлин">Берлин</option>
+              </select>
+              <span>Место прибытия: </span>
+              <select id ="pointArrival">
+                <option value="Москва">Москва</option>
+                <option value="Лондон">Лондон</option>
+                <option value="Париж">Париж</option>
+                <option value="Берлин">Берлин</option>
+              </select>
+              <span>Время отправления: </span>
+              <input type="time" placeholder="Время отправления">
+              <span>Время прибытия: </span>
+              <input type="time" placeholder="Время прибытия">
+              <span>День поездки: </span>
+              <input type="date" placeholder="День поездки">
+              <span>Способ перевозки: </span>
+              <select id ="methodTansportation">
+                <option value="Автобус">Автобус</option>
+                <option value="Поезд">Поезд</option>
+                <option value="Такси">Такси</option>
+                <option value="Электричка">Электричка</option>
+              </select>
+              <span>Стоимость поездки: </span>
+              <input type="number" placeholder="Стоимость" required pattern="^[0-9]+$">
+              <button  id="btn" onclick="addToTable()">+ Добавить новый путь</button >
+          </div>
+
+      </section>
+  </header>
+
+  <section>
+      <ul id="items" class="items">
+          <li>Первый путь</li>
+      </ul>
+  </section>
+  </div>
+  <script src = "./js/index.js"></script>
+</body>
+</html>
