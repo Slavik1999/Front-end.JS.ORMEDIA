@@ -1,0 +1,42 @@
+header .top1 .new_route h1,
+header .top1 .new_route p {
+  text-align: center;
+}
+section {
+  display: none;
+}
+.btnCont {
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .top2 a {
+  margin-left: 20%;
+}
+
+header .top2 .add_route {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.items {
+  width: 100%;
+}
+tr {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+th {
+  width: 20%;
+}
+td {
+  text-align: center;
+  width: 20%;
+  border-right: 1px solid black;
+}
